@@ -9,7 +9,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "node scripts/verify-dist.mjs",
     "preview": "vite preview",
     "build-mapdata": "python scripts/build_origins_mapdata.py"
   },

@@ -9,7 +9,6 @@ import {
 import { CRS, LatLngBounds, LatLng } from "leaflet";
 import {
   compressToEncodedURIComponent,
-  decompressFromEncodedURIComponent,
 } from "lz-string";
 import { HallPrintToolbar } from "./HallPrintToolbar";
 
@@ -22,6 +21,12 @@ import {
   generateRandomBoardGameListName,
   uniqueRandomListName,
 } from "./listNameUtils";
+import {
+  favoritesFromHash,
+  initialListState,
+  persistList,
+  writeListHash,
+} from "./listShare";
 import { loadMapdata } from "./loadMapdata";
 import { publicAssetUrl } from "./mapdataUrl";
 import {
@@ -182,13 +187,14 @@ function FitMapToHallBounds({
 }
 
 export const Map: React.FC = () => {
+  const initialList = useMemo(() => initialListState(), []);
   const [maps, setMaps] = useState<MapInfo[]>([]);
   const [selectedMap, setSelectedMap] = useState<MapInfo | null>(null);
   const [stands, setStands] = useState<Stand[]>([]);
   const [exhibitors, setExhibitors] = useState<Exhibitor[]>([]);
   const [desktop, setDesktop] = useState<boolean | null>(null);
-  const [listKey, setListKey] = useState<string | null>(null);
-  const [favorites, setFavorites] = useState<string[]>([]);
+  const [listKey, setListKey] = useState<string | null>(initialList.listKey);
+  const [favorites, setFavorites] = useState<string[]>(initialList.favorites);
   const [favoriteLists, setFavoriteLists] = useState<string[]>([]);
   const [newListName, setNewListName] = useState<string>(() =>
     generateRandomBoardGameListName(),
@@ -213,45 +219,25 @@ export const Map: React.FC = () => {
     );
   }
 
-  function decodeFavoritesParam(favEncoded: string | null): string[] {
-    if (!favEncoded) return [];
-    try {
-      const decoded = decompressFromEncodedURIComponent(favEncoded);
-      if (!decoded) return [];
-      return decoded
-        .split(",")
-        .map((f) => f.trim())
-        .filter(Boolean);
-    } catch (e) {
-      console.warn("Error decoding favorites from URL:", e);
-      return [];
-    }
-  }
-
   function loadInitialList(): void {
-    const hash = window.location.hash.startsWith("#")
-      ? window.location.hash.substring(1)
-      : window.location.hash;
-    const params = new URLSearchParams("?" + hash);
-    const keyFromHash = params.get("list");
-    const favEncoded = params.get("favs");
+    const { listKey: keyFromHash, favorites: favsFromHash, hasFavsParam } =
+      favoritesFromHash();
 
     if (keyFromHash) {
-      let favs = decodeFavoritesParam(favEncoded);
-      if (favs.length === 0) {
-        const stored = localStorage.getItem(`favorites:${keyFromHash}`);
-        if (stored) {
-          try {
-            const parsed = JSON.parse(stored);
-            favs = Array.isArray(parsed) ? parsed : [];
-          } catch {
-            favs = [];
-          }
+      let favs = favsFromHash;
+      if (!hasFavsParam) {
+        try {
+          const stored = JSON.parse(
+            localStorage.getItem(`favorites:${keyFromHash}`) || "[]",
+          );
+          favs = Array.isArray(stored) ? stored : [];
+        } catch {
+          favs = [];
         }
       }
       setListKey(keyFromHash);
       setFavorites(favs);
-      localStorage.setItem(`favorites:${keyFromHash}`, JSON.stringify(favs));
+      persistList(keyFromHash, favs);
       return;
     }
 
@@ -270,8 +256,7 @@ export const Map: React.FC = () => {
       localStorage.removeItem("favorites");
       setListKey(newKey);
       setFavorites(legacy);
-      const compressed = compressToEncodedURIComponent(legacy.join(","));
-      window.location.hash = `list=${newKey}&favs=${compressed}`;
+      writeListHash(newKey, legacy);
       return;
     }
 
@@ -295,31 +280,31 @@ export const Map: React.FC = () => {
       }
       setListKey(key);
       setFavorites(stored);
-      const compressed = compressToEncodedURIComponent(stored.join(","));
-      window.location.hash = `list=${key}&favs=${compressed}`;
+      writeListHash(key, stored);
       return;
     }
 
     const freshKey = uniqueRandomListName(new Set());
-    localStorage.setItem(`favorites:${freshKey}`, "[]");
+    persistList(freshKey, []);
     setListKey(freshKey);
     setFavorites([]);
-    window.location.hash = `list=${freshKey}`;
+    writeListHash(freshKey, []);
   }
 
-  // Run once on first load
+  // Run once on first load (skip when share link already hydrated state)
   useEffect(() => {
-    loadInitialList();
+    if (!initialList.listKey) {
+      loadInitialList();
+    }
     const isDesktop = window.innerWidth > 1024;
     setDesktop(isDesktop);
   }, []);
 
-  // Sync favorites to localStorage and URL
+  // Sync favorites to localStorage and URL (replaceState — no hashchange loop)
   useEffect(() => {
     if (!listKey) return;
-    localStorage.setItem(`favorites:${listKey}`, JSON.stringify(favorites));
-    const compressed = compressToEncodedURIComponent(favorites.join(","));
-    window.location.hash = `list=${listKey}&favs=${compressed}`;
+    persistList(listKey, favorites);
+    writeListHash(listKey, favorites);
   }, [favorites, listKey]);
 
   // Load all favorite list names
@@ -707,10 +692,7 @@ export const Map: React.FC = () => {
                         localStorage.getItem(`favorites:${key}`) || "[]",
                       );
                       setFavorites(stored);
-                      const compressed = compressToEncodedURIComponent(
-                        stored.join(","),
-                      );
-                      window.location.hash = `list=${key}&favs=${compressed}`;
+                      writeListHash(key, stored);
                     }}
                   >
                     📄 {key}
@@ -772,13 +754,13 @@ export const Map: React.FC = () => {
                   );
                   return;
                 }
-                localStorage.setItem(`favorites:${newKey}`, "[]");
+                persistList(newKey, []);
                 setListKey(newKey);
                 setFavorites([]);
                 setNewListName(
                   uniqueRandomListName(new Set([...favoriteLists, newKey])),
                 );
-                window.location.hash = `list=${newKey}`;
+                writeListHash(newKey, []);
               }}
             >
               ➕ Create
@@ -795,10 +777,11 @@ export const Map: React.FC = () => {
             }
             onClick={() => {
               if (!listKey) return;
+              writeListHash(listKey, favorites);
               const compressed = compressToEncodedURIComponent(
                 favorites.join(","),
               );
-              const url = `${window.location.origin}${window.location.pathname}#list=${listKey}&favs=${compressed}`;
+              const url = `${window.location.origin}${window.location.pathname}${window.location.search}#list=${encodeURIComponent(listKey)}&favs=${compressed}`;
               navigator.clipboard
                 .writeText(url)
                 .then(() => alert("Link copied to clipboard!"))

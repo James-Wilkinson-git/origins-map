@@ -213,6 +213,21 @@ export const Map: React.FC = () => {
     );
   }
 
+  function decodeFavoritesParam(favEncoded: string | null): string[] {
+    if (!favEncoded) return [];
+    try {
+      const decoded = decompressFromEncodedURIComponent(favEncoded);
+      if (!decoded) return [];
+      return decoded
+        .split(",")
+        .map((f) => f.trim())
+        .filter(Boolean);
+    } catch (e) {
+      console.warn("Error decoding favorites from URL:", e);
+      return [];
+    }
+  }
+
   function loadInitialList(): void {
     const hash = window.location.hash.startsWith("#")
       ? window.location.hash.substring(1)
@@ -222,37 +237,22 @@ export const Map: React.FC = () => {
     const favEncoded = params.get("favs");
 
     if (keyFromHash) {
-      const stored = localStorage.getItem(`favorites:${keyFromHash}`);
-      if (stored) {
-        let favsFromUrl: string[] = [];
-        try {
-          if (favEncoded) {
-            const decoded = decompressFromEncodedURIComponent(favEncoded);
-            if (decoded) {
-              favsFromUrl = decoded
-                .split(",")
-                .map((f) => f.trim())
-                .filter(Boolean);
-            }
-          }
-        } catch (e) {
-          console.warn("Error decoding favorites from URL:", e);
-        }
-        if (favsFromUrl.length === 0) {
+      let favs = decodeFavoritesParam(favEncoded);
+      if (favs.length === 0) {
+        const stored = localStorage.getItem(`favorites:${keyFromHash}`);
+        if (stored) {
           try {
             const parsed = JSON.parse(stored);
-            favsFromUrl = Array.isArray(parsed) ? parsed : [];
+            favs = Array.isArray(parsed) ? parsed : [];
           } catch {
-            favsFromUrl = [];
+            favs = [];
           }
         }
-        setListKey(keyFromHash);
-        setFavorites(Array.isArray(favsFromUrl) ? favsFromUrl : []);
-        return;
       }
-      // Hash referenced a list that no longer exists; fall through to
-      // auto-select/auto-create so the user lands ready-to-favorite.
-      clearHashInUrl();
+      setListKey(keyFromHash);
+      setFavorites(favs);
+      localStorage.setItem(`favorites:${keyFromHash}`, JSON.stringify(favs));
+      return;
     }
 
     // Migrate legacy

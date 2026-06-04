@@ -1,6 +1,5 @@
 html {
   height: 100%;
-  height: -webkit-fill-available;
 }
 body,
 #root {
@@ -11,19 +10,15 @@ body,
 /* One full-screen pane; scroll only inside .controls / .list-container. */
 body {
   overflow: hidden;
-  overscroll-behavior: none;
-  position: fixed;
-  inset: 0;
-  width: 100%;
 }
 #root {
   height: 100%;
-  max-height: 100dvh;
-  max-height: 100svh;
   overflow: hidden;
   box-sizing: border-box;
 }
 .app-shell {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   min-height: 0;
   box-sizing: border-box;
@@ -32,8 +27,6 @@ body {
   width: 100%;
   height: 100%;
   background: #ffffff !important;
-  overscroll-behavior: none;
-  touch-action: none;
 }
 
 svg.origins-expo-svg,
@@ -43,13 +36,11 @@ svg.origins-expo-svg * {
 
 .map-viewport {
   position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
-  max-height: 100dvh;
-  max-height: 100svh;
   overflow: hidden;
-  overscroll-behavior: none;
 }
 .origins-print-group {
   display: flex;
@@ -120,7 +111,7 @@ a.leaflet-popup-close-button {
   width: 250px;
   max-width: calc(100vw - 20px);
   box-sizing: border-box;
-  max-height: calc(100svh - 20px - env(safe-area-inset-top));
+  max-height: calc(100dvh - 20px - env(safe-area-inset-top));
   overflow-y: auto;
   overscroll-behavior: contain;
   touch-action: pan-y;
@@ -281,7 +272,7 @@ a.leaflet-popup-close-button {
     top: max(8px, env(safe-area-inset-top));
     padding: 10px 12px;
     width: min(250px, calc(100vw - 16px));
-    max-height: min(340px, calc(100svh - 24px - env(safe-area-inset-top)));
+    max-height: min(340px, calc(100dvh - 24px - env(safe-area-inset-top)));
   }
   /* Single scroll container on iOS — nested momentum scroll fights the map pinch-zoom. */
   .controls-search-results {
@@ -359,30 +350,13 @@ p.desc {
   padding-top: max(16px, env(safe-area-inset-top));
   padding-bottom: max(16px, env(safe-area-inset-bottom));
   box-sizing: border-box;
-  height: 100%;
-  max-height: 100dvh;
-  max-height: 100svh;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
   overscroll-behavior-y: contain;
   touch-action: pan-y;
 }
 
-/* iOS Safari: stable full-screen height and no document rubber-banding. */
-@supports (-webkit-touch-callout: none) {
-  html {
-    height: -webkit-fill-available;
-  }
-  body,
-  #root,
-  .app-shell,
-  .map-viewport {
-    height: -webkit-fill-available;
-    max-height: -webkit-fill-available;
-  }
-  .controls {
-    -webkit-overflow-scrolling: auto;
-  }
-}
 .list-container h2 {
   font-size: 24px;
   font-weight: bold;

@@ -273,6 +273,9 @@ a.leaflet-popup-close-button {
 }
 
 @media (max-width: 640px) {
+  .origins-print-group {
+    display: none !important;
+  }
   .controls {
     right: 8px;
     top: max(8px, env(safe-area-inset-top));

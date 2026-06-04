@@ -7,7 +7,7 @@ body,
   margin: 0;
   padding: 0;
 }
-/* One full-screen pane; scroll only inside .controls / .list-container. */
+/* Scroll only inside the map sidebar or /list view. */
 body {
   overflow: hidden;
 }
@@ -17,8 +17,6 @@ body {
   box-sizing: border-box;
 }
 .app-shell {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   min-height: 0;
   box-sizing: border-box;
@@ -36,10 +34,10 @@ svg.origins-expo-svg * {
 
 .map-viewport {
   position: relative;
-  flex: 1 1 auto;
-  min-height: 0;
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
+  max-height: 100dvh;
   overflow: hidden;
 }
 .origins-print-group {
@@ -93,7 +91,8 @@ a.leaflet-popup-close-button {
   font-weight: bold;
   font-size: 14px;
 }
-.controls {
+/* Sidebar: hall map selector, search, lists, info. */
+.sidebar {
   background: #ffffff;
   position: absolute;
   z-index: 9000;
@@ -114,7 +113,24 @@ a.leaflet-popup-close-button {
   max-height: calc(100dvh - 20px - env(safe-area-inset-top));
   overflow-y: auto;
   overscroll-behavior: contain;
+  /* iOS Safari: scroll the panel only — do not pinch/double-tap zoom the page */
   touch-action: pan-y;
+}
+.sidebar button,
+.sidebar summary,
+.sidebar a,
+.sidebar select,
+.sidebar label,
+.sidebar details {
+  touch-action: manipulation;
+}
+.sidebar input[type="text"],
+.sidebar input[type="search"],
+.sidebar select {
+  font-size: 16px;
+  min-height: 44px;
+  box-sizing: border-box;
+  touch-action: manipulation;
 }
 .controls-info-lead {
   margin: 0.35em 0;
@@ -220,7 +236,7 @@ a.leaflet-popup-close-button {
   border-bottom: 1px solid #e8e8e8;
   background: #f5f5f5;
 }
-.controls .controls-search-results button.controls-search-result-row {
+.sidebar .controls-search-results button.controls-search-result-row {
   display: block;
   width: 100%;
   height: auto;
@@ -235,10 +251,10 @@ a.leaflet-popup-close-button {
   cursor: pointer;
   box-sizing: border-box;
 }
-.controls .controls-search-results button.controls-search-result-row:last-child {
+.sidebar .controls-search-results button.controls-search-result-row:last-child {
   border-bottom: none;
 }
-.controls .controls-search-results button.controls-search-result-row.is-active {
+.sidebar .controls-search-results button.controls-search-result-row.is-active {
   background: #e7f1ff;
 }
 .controls-search-result-stand {
@@ -267,24 +283,17 @@ a.leaflet-popup-close-button {
   .origins-print-group {
     display: none !important;
   }
-  .controls {
+  .sidebar {
     right: 8px;
     top: max(8px, env(safe-area-inset-top));
     padding: 10px 12px;
     width: min(250px, calc(100vw - 16px));
     max-height: min(340px, calc(100dvh - 24px - env(safe-area-inset-top)));
   }
-  /* Single scroll container on iOS — nested momentum scroll fights the map pinch-zoom. */
+  /* One scroll area in the sidebar on phones (no nested scroll + page zoom) */
   .controls-search-results {
     max-height: none;
     overflow-y: visible;
-  }
-  .controls input[type="text"],
-  .controls input[type="search"],
-  .controls select {
-    font-size: 16px;
-    min-height: 44px;
-    box-sizing: border-box;
   }
   a.leaflet-popup-close-button {
     width: 32px !important;
@@ -350,11 +359,11 @@ p.desc {
   padding-top: max(16px, env(safe-area-inset-top));
   padding-bottom: max(16px, env(safe-area-inset-bottom));
   box-sizing: border-box;
-  flex: 1 1 auto;
-  min-height: 0;
+  height: 100%;
+  max-height: 100dvh;
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  touch-action: pan-y;
+  touch-action: manipulation;
 }
 
 .list-container h2 {

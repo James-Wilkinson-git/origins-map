@@ -158,25 +158,6 @@ function MapFlyToStand({
   return null;
 }
 
-/** Leaflet can mount at 0×0 in Safari flex layouts until the pane gets its final size. */
-function MapInvalidateOnLayout() {
-  const map = useMap();
-  useEffect(() => {
-    const fix = () => map.invalidateSize({ animate: false });
-    const id = window.requestAnimationFrame(() => {
-      window.requestAnimationFrame(fix);
-    });
-    window.addEventListener("resize", fix);
-    window.addEventListener("orientationchange", fix);
-    return () => {
-      window.cancelAnimationFrame(id);
-      window.removeEventListener("resize", fix);
-      window.removeEventListener("orientationchange", fix);
-    };
-  }, [map]);
-  return null;
-}
-
 /** react-leaflet `MapContainer` only fits `bounds` on first mount — refit whenever the hall changes. */
 function FitMapToHallBounds({
   bounds,
@@ -573,7 +554,7 @@ export const Map: React.FC = () => {
 
   return (
     <div className="map-viewport">
-      <div className="controls">
+      <div className="sidebar">
         {mapdataError && (
           <div className="mapdata-load-error" role="alert">
             <strong>Map data failed to load.</strong>
@@ -865,7 +846,6 @@ export const Map: React.FC = () => {
           zoomSnap={0.2}
           style={{ height: "100%", width: "100%" }}
         >
-          <MapInvalidateOnLayout />
           <FitMapToHallBounds
             bounds={bounds}
             enabled={!searchFocusStand}

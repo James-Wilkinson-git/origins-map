@@ -6,4 +6,6 @@ __pycache__/
 .env
 .env.*
 !.env.example
+# data/ source maps stay local; webp-halls.json is committed at repo root path data/webp-halls.json
+scripts/
 data/

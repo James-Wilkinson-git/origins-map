@@ -9,8 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "build-mapdata": "python scripts/build_origins_mapdata.py"
+    "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.6",

@@ -448,6 +448,87 @@
         "2208",
         "2112"
       ]
+    },
+    {
+      "pk": 3,
+      "title": "Pods A",
+      "view_box": "0 0 2500 2567",
+      "bounds": "0 0 2500 2567",
+      "flattened_image": "/maps/pods-a.webp",
+      "image": "/maps/pods-a.webp",
+      "stands": []
+    },
+    {
+      "pk": 4,
+      "title": "Pods B",
+      "view_box": "0 0 2500 2431",
+      "bounds": "0 0 2500 2431",
+      "flattened_image": "/maps/pods-b.webp",
+      "image": "/maps/pods-b.webp",
+      "stands": []
+    },
+    {
+      "pk": 5,
+      "title": "Pods C",
+      "view_box": "0 0 2500 2108",
+      "bounds": "0 0 2500 2108",
+      "flattened_image": "/maps/pods-c.webp",
+      "image": "/maps/pods-c.webp",
+      "stands": []
+    },
+    {
+      "pk": 6,
+      "title": "Pods D",
+      "view_box": "0 0 2500 2108",
+      "bounds": "0 0 2500 2108",
+      "flattened_image": "/maps/pods-d.webp",
+      "image": "/maps/pods-d.webp",
+      "stands": []
+    },
+    {
+      "pk": 7,
+      "title": "Hyatt First Floor",
+      "view_box": "0 0 2500 2354",
+      "bounds": "0 0 2500 2354",
+      "flattened_image": "/maps/hyatt-first-floor.webp",
+      "image": "/maps/hyatt-first-floor.webp",
+      "stands": []
+    },
+    {
+      "pk": 8,
+      "title": "Hyatt Second Floor",
+      "view_box": "0 0 2500 2496",
+      "bounds": "0 0 2500 2496",
+      "flattened_image": "/maps/hyatt-second-floor.webp",
+      "image": "/maps/hyatt-second-floor.webp",
+      "stands": []
+    },
+    {
+      "pk": 9,
+      "title": "Other Reserved Rooms",
+      "view_box": "0 0 2500 3258",
+      "bounds": "0 0 2500 3258",
+      "flattened_image": "/maps/other-reserved-rooms.webp",
+      "image": "/maps/other-reserved-rooms.webp",
+      "stands": []
+    },
+    {
+      "pk": 10,
+      "title": "Short North Ballrooms",
+      "view_box": "0 0 2500 1962",
+      "bounds": "0 0 2500 1962",
+      "flattened_image": "/maps/short-north-ballrooms.webp",
+      "image": "/maps/short-north-ballrooms.webp",
+      "stands": []
+    },
+    {
+      "pk": 11,
+      "title": "Finding Your Way",
+      "view_box": "0 0 2500 2624",
+      "bounds": "0 0 2500 2624",
+      "flattened_image": "/maps/finding-your-way.webp",
+      "image": "/maps/finding-your-way.webp",
+      "stands": []
     }
   ],
   "stands": [
@@ -11421,7 +11502,7 @@
     {
       "pk": 31,
       "title": "B.A. Games",
-      "stand": "2009",
+      "stand": "2219",
       "website": "https://bagamesco.com",
       "description": "",
       "url": "",
@@ -11816,7 +11897,7 @@
     },
     {
       "pk": 75,
-      "title": "Creature Curation/Vast Grim",
+      "title": "Creature Curation/Vast Grimm",
       "stand": "2100",
       "website": "https://creaturecuration.com",
       "description": "",
@@ -12572,7 +12653,7 @@
     },
     {
       "pk": 159,
-      "title": "Hymgho Premium GamingSupplies",
+      "title": "Hymgho Premium Gaming Supplies",
       "stand": "1919",
       "website": "https://hymgho.us",
       "description": "",
@@ -12599,6 +12680,15 @@
     },
     {
       "pk": 162,
+      "title": "Indie Games Collective",
+      "stand": "2504",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 1
+    },
+    {
+      "pk": 163,
       "title": "Indie GameStudios/Stronghold Games",
       "stand": "1301",
       "website": "https://strongholdgames.com",
@@ -12607,7 +12697,7 @@
       "expo_map": 1
     },
     {
-      "pk": 163,
+      "pk": 164,
       "title": "Indie Press Revolution",
       "stand": "1803",
       "website": "",
@@ -12616,7 +12706,7 @@
       "expo_map": 1
     },
     {
-      "pk": 164,
+      "pk": 165,
       "title": "Ink Splot Games",
       "stand": "1905",
       "website": "https://presentsrequested.com",
@@ -12625,7 +12715,7 @@
       "expo_map": 1
     },
     {
-      "pk": 165,
+      "pk": 166,
       "title": "Inside Up Games",
       "stand": "2303",
       "website": "https://insideupgames.com",
@@ -12634,7 +12724,7 @@
       "expo_map": 1
     },
     {
-      "pk": 166,
+      "pk": 167,
       "title": "Inspired Artistry",
       "stand": "1628",
       "website": "https://facebook.com/people/Inspired-Artistry/100035399664478",
@@ -12643,7 +12733,7 @@
       "expo_map": 1
     },
     {
-      "pk": 167,
+      "pk": 168,
       "title": "Interstellar Dice",
       "stand": "1622",
       "website": "",
@@ -12652,7 +12742,7 @@
       "expo_map": 1
     },
     {
-      "pk": 168,
+      "pk": 169,
       "title": "Intrepid Gremlin Games",
       "stand": "1508",
       "website": "",
@@ -12661,7 +12751,7 @@
       "expo_map": 1
     },
     {
-      "pk": 169,
+      "pk": 170,
       "title": "Ivory Elk Designs",
       "stand": "1319",
       "website": "https://ivoryelkdesigns.com",
@@ -12670,7 +12760,7 @@
       "expo_map": 1
     },
     {
-      "pk": 170,
+      "pk": 171,
       "title": "Jacob Walker Art",
       "stand": "2610",
       "website": "",
@@ -12679,7 +12769,7 @@
       "expo_map": 1
     },
     {
-      "pk": 171,
+      "pk": 172,
       "title": "Jamon Red, LLC - Hector Ceniceros III",
       "stand": "1421",
       "website": "",
@@ -12688,7 +12778,7 @@
       "expo_map": 1
     },
     {
-      "pk": 172,
+      "pk": 173,
       "title": "Jank Mats",
       "stand": "1101",
       "website": "",
@@ -12697,7 +12787,7 @@
       "expo_map": 1
     },
     {
-      "pk": 173,
+      "pk": 174,
       "title": "Japanime Games",
       "stand": "2801",
       "website": "https://japanimegames.com",
@@ -12706,7 +12796,7 @@
       "expo_map": 1
     },
     {
-      "pk": 174,
+      "pk": 175,
       "title": "Joking Hazard",
       "stand": "2028",
       "website": "",
@@ -12715,7 +12805,7 @@
       "expo_map": 1
     },
     {
-      "pk": 175,
+      "pk": 176,
       "title": "Justine Dillenbeck Illustrations",
       "stand": "15270",
       "website": "",
@@ -12724,7 +12814,7 @@
       "expo_map": 1
     },
     {
-      "pk": 176,
+      "pk": 177,
       "title": "KamoriaArt",
       "stand": "1911",
       "website": "https://kamoriaart.carrd.co",
@@ -12733,7 +12823,7 @@
       "expo_map": 1
     },
     {
-      "pk": 177,
+      "pk": 178,
       "title": "Kawaii Lab Games",
       "stand": "2506",
       "website": "https://kawaiilabgames.com",
@@ -12742,7 +12832,7 @@
       "expo_map": 1
     },
     {
-      "pk": 178,
+      "pk": 179,
       "title": "Kinson Key Games",
       "stand": "1620",
       "website": "https://kinsonkeygames.com",
@@ -12751,7 +12841,7 @@
       "expo_map": 1
     },
     {
-      "pk": 179,
+      "pk": 180,
       "title": "Krit Dice",
       "stand": "1720",
       "website": "https://kritdice.com",
@@ -12760,7 +12850,7 @@
       "expo_map": 1
     },
     {
-      "pk": 180,
+      "pk": 181,
       "title": "Krystaline Studio",
       "stand": "1008",
       "website": "",
@@ -12769,7 +12859,7 @@
       "expo_map": 1
     },
     {
-      "pk": 181,
+      "pk": 182,
       "title": "Lacorsa Grand Prix Game",
       "stand": "1602",
       "website": "",
@@ -12778,7 +12868,7 @@
       "expo_map": 1
     },
     {
-      "pk": 182,
+      "pk": 183,
       "title": "Last Night Games",
       "stand": "2601",
       "website": "https://lastnightgames.com",
@@ -12787,7 +12877,7 @@
       "expo_map": 1
     },
     {
-      "pk": 183,
+      "pk": 184,
       "title": "Lets Bug Out",
       "stand": "1708",
       "website": "",
@@ -12796,7 +12886,7 @@
       "expo_map": 1
     },
     {
-      "pk": 184,
+      "pk": 185,
       "title": "Level UpSabers",
       "stand": "2514",
       "website": "",
@@ -12805,7 +12895,7 @@
       "expo_map": 1
     },
     {
-      "pk": 185,
+      "pk": 186,
       "title": "Libib",
       "stand": "1505",
       "website": "https://libib.com",
@@ -12814,7 +12904,7 @@
       "expo_map": 1
     },
     {
-      "pk": 186,
+      "pk": 187,
       "title": "Lilystrations",
       "stand": "1417",
       "website": "",
@@ -12823,7 +12913,7 @@
       "expo_map": 1
     },
     {
-      "pk": 187,
+      "pk": 188,
       "title": "Limithron LLC",
       "stand": "2300",
       "website": "https://limithron.com",
@@ -12832,7 +12922,7 @@
       "expo_map": 1
     },
     {
-      "pk": 188,
+      "pk": 189,
       "title": "Limitless Adventures",
       "stand": "22110",
       "website": "",
@@ -12841,7 +12931,7 @@
       "expo_map": 1
     },
     {
-      "pk": 189,
+      "pk": 190,
       "title": "Lioness Games",
       "stand": "2605",
       "website": "https://lionessgames.com",
@@ -12850,7 +12940,7 @@
       "expo_map": 1
     },
     {
-      "pk": 190,
+      "pk": 191,
       "title": "Littlest Lantern",
       "stand": "1304",
       "website": "https://littlestlantern.com",
@@ -12859,7 +12949,7 @@
       "expo_map": 1
     },
     {
-      "pk": 191,
+      "pk": 192,
       "title": "LongPack Games & Toys",
       "stand": "1528",
       "website": "",
@@ -12868,7 +12958,7 @@
       "expo_map": 1
     },
     {
-      "pk": 192,
+      "pk": 193,
       "title": "Lor Illustration",
       "stand": "2112",
       "website": "",
@@ -12877,7 +12967,7 @@
       "expo_map": 1
     },
     {
-      "pk": 193,
+      "pk": 194,
       "title": "Lore Link",
       "stand": "2004",
       "website": "https://lorelink.com",
@@ -12886,7 +12976,7 @@
       "expo_map": 1
     },
     {
-      "pk": 194,
+      "pk": 195,
       "title": "Ludoliminal",
       "stand": "1404",
       "website": "https://ludoliminal.com",
@@ -12895,7 +12985,7 @@
       "expo_map": 1
     },
     {
-      "pk": 195,
+      "pk": 196,
       "title": "Luminous Games",
       "stand": "1711",
       "website": "",
@@ -12904,7 +12994,7 @@
       "expo_map": 1
     },
     {
-      "pk": 196,
+      "pk": 197,
       "title": "Lurker's Loot",
       "stand": "2703",
       "website": "https://lurkingfears.com",
@@ -12913,7 +13003,7 @@
       "expo_map": 1
     },
     {
-      "pk": 197,
+      "pk": 198,
       "title": "LUZ-ART",
       "stand": "1416",
       "website": "",
@@ -12922,7 +13012,7 @@
       "expo_map": 1
     },
     {
-      "pk": 198,
+      "pk": 199,
       "title": "Mad Dragon Woodcraft",
       "stand": "1425",
       "website": "",
@@ -12931,7 +13021,7 @@
       "expo_map": 1
     },
     {
-      "pk": 199,
+      "pk": 200,
       "title": "Magic Minis and More",
       "stand": "2800",
       "website": "https://ebay.com/str/magicminisandmore",
@@ -12940,7 +13030,7 @@
       "expo_map": 1
     },
     {
-      "pk": 200,
+      "pk": 201,
       "title": "Maliveth",
       "stand": "1715",
       "website": "https://maliveth.com",
@@ -12949,7 +13039,7 @@
       "expo_map": 1
     },
     {
-      "pk": 201,
+      "pk": 202,
       "title": "Mantic Games",
       "stand": "1016",
       "website": "https://manticgames.com",
@@ -12958,7 +13048,7 @@
       "expo_map": 1
     },
     {
-      "pk": 202,
+      "pk": 203,
       "title": "MB Kraft Studio",
       "stand": "1909",
       "website": "https://mbkraftstudio.etsy.com",
@@ -12967,7 +13057,7 @@
       "expo_map": 1
     },
     {
-      "pk": 203,
+      "pk": 204,
       "title": "Meeples At Sea",
       "stand": "1917",
       "website": "https://gameconhq.com",
@@ -12976,7 +13066,7 @@
       "expo_map": 1
     },
     {
-      "pk": 204,
+      "pk": 205,
       "title": "Mega Kawaii Cuties",
       "stand": "2311",
       "website": "",
@@ -12985,7 +13075,7 @@
       "expo_map": 1
     },
     {
-      "pk": 205,
+      "pk": 206,
       "title": "Merlin's Munchies Coffee Company",
       "stand": "1402",
       "website": "https://merlinsmunchiescoffee.com",
@@ -12994,7 +13084,7 @@
       "expo_map": 1
     },
     {
-      "pk": 206,
+      "pk": 207,
       "title": "Midnight Games",
       "stand": "13150",
       "website": "https://midnightgamesshop.wixsite.com/mysite",
@@ -13003,7 +13093,7 @@
       "expo_map": 1
     },
     {
-      "pk": 207,
+      "pk": 208,
       "title": "Midwest Cards",
       "stand": "2316",
       "website": "https://midwestcards.com",
@@ -13012,7 +13102,7 @@
       "expo_map": 1
     },
     {
-      "pk": 208,
+      "pk": 209,
       "title": "Mighty Pie Creative Workshop",
       "stand": "1521",
       "website": "https://mightypieworkshop.com",
@@ -13021,7 +13111,7 @@
       "expo_map": 1
     },
     {
-      "pk": 209,
+      "pk": 210,
       "title": "Miniature Market",
       "stand": "1210",
       "website": "https://miniaturemarket.com",
@@ -13030,7 +13120,7 @@
       "expo_map": 1
     },
     {
-      "pk": 210,
+      "pk": 211,
       "title": "Mischief Loot",
       "stand": "1002",
       "website": "https://mischiefloot.com",
@@ -13039,7 +13129,7 @@
       "expo_map": 1
     },
     {
-      "pk": 211,
+      "pk": 212,
       "title": "MK Woodcrafts",
       "stand": "1011",
       "website": "https://etsy.com/shop/mkwoodcrafts.com",
@@ -13048,7 +13138,7 @@
       "expo_map": 1
     },
     {
-      "pk": 212,
+      "pk": 213,
       "title": "Moon Crab Games",
       "stand": "2613",
       "website": "",
@@ -13057,7 +13147,7 @@
       "expo_map": 1
     },
     {
-      "pk": 213,
+      "pk": 214,
       "title": "MoonSaga Workshop",
       "stand": "1516",
       "website": "",
@@ -13066,7 +13156,7 @@
       "expo_map": 1
     },
     {
-      "pk": 214,
+      "pk": 215,
       "title": "moreblueberries",
       "stand": "2501",
       "website": "https://moreblueberries.shop",
@@ -13075,7 +13165,7 @@
       "expo_map": 1
     },
     {
-      "pk": 215,
+      "pk": 216,
       "title": "Moss Fete",
       "stand": "2024",
       "website": "https://moss-fete.com",
@@ -13084,7 +13174,7 @@
       "expo_map": 1
     },
     {
-      "pk": 216,
+      "pk": 217,
       "title": "My Little Demon",
       "stand": "1519",
       "website": "",
@@ -13093,7 +13183,7 @@
       "expo_map": 1
     },
     {
-      "pk": 217,
+      "pk": 218,
       "title": "MyNerdLife",
       "stand": "2803",
       "website": "https://mynerdlife.com",
@@ -13102,7 +13192,7 @@
       "expo_map": 1
     },
     {
-      "pk": 218,
+      "pk": 219,
       "title": "Mystic Tomes & Treasures",
       "stand": "1201",
       "website": "https://arcane-ink.com",
@@ -13111,7 +13201,7 @@
       "expo_map": 1
     },
     {
-      "pk": 219,
+      "pk": 220,
       "title": "Mythworks",
       "stand": "1423",
       "website": "",
@@ -13120,7 +13210,7 @@
       "expo_map": 1
     },
     {
-      "pk": 220,
+      "pk": 221,
       "title": "Najarian Art",
       "stand": "2314",
       "website": "",
@@ -13129,7 +13219,7 @@
       "expo_map": 1
     },
     {
-      "pk": 221,
+      "pk": 222,
       "title": "Nate Lovett",
       "stand": "1215",
       "website": "https://nate-lovett.com",
@@ -13138,7 +13228,7 @@
       "expo_map": 1
     },
     {
-      "pk": 222,
+      "pk": 223,
       "title": "Neuroscape",
       "stand": "2701",
       "website": "https://neuroscapetcg.com",
@@ -13147,7 +13237,7 @@
       "expo_map": 1
     },
     {
-      "pk": 223,
+      "pk": 224,
       "title": "Next Level Miniatures",
       "stand": "1010",
       "website": "https://nextlevelminiatures.com",
@@ -13156,7 +13246,7 @@
       "expo_map": 1
     },
     {
-      "pk": 224,
+      "pk": 225,
       "title": "Nick Jizba",
       "stand": "2315",
       "website": "",
@@ -13165,7 +13255,7 @@
       "expo_map": 1
     },
     {
-      "pk": 225,
+      "pk": 226,
       "title": "Nomadic Lasers",
       "stand": "2602",
       "website": "https://linktr.ee/nomadiclasers",
@@ -13174,7 +13264,7 @@
       "expo_map": 1
     },
     {
-      "pk": 226,
+      "pk": 227,
       "title": "Norse Foundry",
       "stand": "2205",
       "website": "",
@@ -13183,7 +13273,7 @@
       "expo_map": 1
     },
     {
-      "pk": 227,
+      "pk": 228,
       "title": "Offcut Games",
       "stand": "1811",
       "website": "",
@@ -13192,7 +13282,7 @@
       "expo_map": 1
     },
     {
-      "pk": 228,
+      "pk": 229,
       "title": "Offshoots",
       "stand": "1607",
       "website": "https://offshootsgame.com",
@@ -13201,7 +13291,7 @@
       "expo_map": 1
     },
     {
-      "pk": 229,
+      "pk": 230,
       "title": "Origins 2026 Merch",
       "stand": "1023",
       "website": "",
@@ -13210,7 +13300,7 @@
       "expo_map": 1
     },
     {
-      "pk": 230,
+      "pk": 231,
       "title": "OUTSET",
       "stand": "2611",
       "website": "https://outsetmedia.com",
@@ -13219,7 +13309,7 @@
       "expo_map": 1
     },
     {
-      "pk": 231,
+      "pk": 232,
       "title": "PACIFIC MIDWEST CREATIONS",
       "stand": "2110",
       "website": "https://facebook.com/pacificmidwestcreations",
@@ -13228,7 +13318,7 @@
       "expo_map": 1
     },
     {
-      "pk": 232,
+      "pk": 233,
       "title": "Pages of Ivy",
       "stand": "2015",
       "website": "https://pagesofivy.co",
@@ -13237,7 +13327,7 @@
       "expo_map": 1
     },
     {
-      "pk": 233,
+      "pk": 234,
       "title": "Paige the Gnome",
       "stand": "2216",
       "website": "",
@@ -13246,7 +13336,7 @@
       "expo_map": 1
     },
     {
-      "pk": 234,
+      "pk": 235,
       "title": "Painted Dragon Studios",
       "stand": "1213",
       "website": "",
@@ -13255,7 +13345,7 @@
       "expo_map": 1
     },
     {
-      "pk": 235,
+      "pk": 236,
       "title": "Parakeet Griffin Games",
       "stand": "1318",
       "website": "https://parakeetgriffingames.com",
@@ -13264,7 +13354,7 @@
       "expo_map": 1
     },
     {
-      "pk": 236,
+      "pk": 237,
       "title": "Part Time Dragons",
       "stand": "2026",
       "website": "https://parttimedragons.com",
@@ -13273,7 +13363,7 @@
       "expo_map": 1
     },
     {
-      "pk": 237,
+      "pk": 238,
       "title": "Pawley Studios",
       "stand": "1314",
       "website": "https://pawleystudios.com",
@@ -13282,7 +13372,7 @@
       "expo_map": 1
     },
     {
-      "pk": 238,
+      "pk": 239,
       "title": "Pegasus Publishing",
       "stand": "1514",
       "website": "https://pegasuspublishing.com",
@@ -13291,7 +13381,7 @@
       "expo_map": 1
     },
     {
-      "pk": 239,
+      "pk": 240,
       "title": "Piece Keepers",
       "stand": "1712",
       "website": "",
@@ -13300,7 +13390,7 @@
       "expo_map": 1
     },
     {
-      "pk": 240,
+      "pk": 241,
       "title": "pineapplebread",
       "stand": "1414",
       "website": "",
@@ -13309,7 +13399,7 @@
       "expo_map": 1
     },
     {
-      "pk": 241,
+      "pk": 242,
       "title": "Pink Bunny Games",
       "stand": "1819",
       "website": "",
@@ -13318,7 +13408,7 @@
       "expo_map": 1
     },
     {
-      "pk": 242,
+      "pk": 243,
       "title": "Pink Hawk Games",
       "stand": "1404",
       "website": "https://pinkhawkgames.com",
@@ -13327,7 +13417,7 @@
       "expo_map": 1
     },
     {
-      "pk": 243,
+      "pk": 244,
       "title": "Pizza With a Fork LLC",
       "stand": "2206",
       "website": "https://pizzawithaforkgames.com",
@@ -13336,7 +13426,7 @@
       "expo_map": 1
     },
     {
-      "pk": 244,
+      "pk": 245,
       "title": "Placeholder Games",
       "stand": "1705",
       "website": "https://placeholder-games.com",
@@ -13345,7 +13435,7 @@
       "expo_map": 1
     },
     {
-      "pk": 245,
+      "pk": 246,
       "title": "Play to Z",
       "stand": "2006",
       "website": "https://playtozgames.com",
@@ -13354,7 +13444,7 @@
       "expo_map": 1
     },
     {
-      "pk": 246,
+      "pk": 247,
       "title": "PocketParks",
       "stand": "2505",
       "website": "https://pocketparks.com",
@@ -13363,7 +13453,7 @@
       "expo_map": 1
     },
     {
-      "pk": 247,
+      "pk": 248,
       "title": "Pollia Design",
       "stand": "1415",
       "website": "https://polliadesign.com",
@@ -13372,7 +13462,7 @@
       "expo_map": 1
     },
     {
-      "pk": 248,
+      "pk": 249,
       "title": "Portreii",
       "stand": "2405",
       "website": "",
@@ -13381,7 +13471,7 @@
       "expo_map": 1
     },
     {
-      "pk": 249,
+      "pk": 250,
       "title": "PostCurious",
       "stand": "1806",
       "website": "https://getpostcurious.com",
@@ -13390,7 +13480,7 @@
       "expo_map": 1
     },
     {
-      "pk": 250,
+      "pk": 251,
       "title": "Potion Dice Emporium",
       "stand": "1625",
       "website": "",
@@ -13399,7 +13489,7 @@
       "expo_map": 1
     },
     {
-      "pk": 251,
+      "pk": 252,
       "title": "Pour Over Gaming",
       "stand": "1718",
       "website": "https://pourovergaming.com",
@@ -13408,7 +13498,7 @@
       "expo_map": 1
     },
     {
-      "pk": 252,
+      "pk": 253,
       "title": "Prime Chaos GlassStudios",
       "stand": "1722",
       "website": "",
@@ -13417,7 +13507,7 @@
       "expo_map": 1
     },
     {
-      "pk": 253,
+      "pk": 254,
       "title": "Probably Illegal People",
       "stand": "1400",
       "website": "",
@@ -13426,7 +13516,7 @@
       "expo_map": 1
     },
     {
-      "pk": 254,
+      "pk": 255,
       "title": "Proper Play Games",
       "stand": "1222",
       "website": "",
@@ -13435,7 +13525,7 @@
       "expo_map": 1
     },
     {
-      "pk": 255,
+      "pk": 256,
       "title": "Pushing Tin Games",
       "stand": "1020",
       "website": "https://pushingtingames.com",
@@ -13444,7 +13534,7 @@
       "expo_map": 1
     },
     {
-      "pk": 256,
+      "pk": 257,
       "title": "Quilt Beginnings",
       "stand": "2005",
       "website": "https://quiltbeginnings.com",
@@ -13453,8 +13543,8 @@
       "expo_map": 1
     },
     {
-      "pk": 257,
-      "title": "R. Talsorian",
+      "pk": 258,
+      "title": "R. Talsorian Games",
       "stand": "2301",
       "website": "",
       "description": "",
@@ -13462,7 +13552,7 @@
       "expo_map": 1
     },
     {
-      "pk": 258,
+      "pk": 259,
       "title": "Race to Stupid Games",
       "stand": "1021",
       "website": "https://racetostupid.com",
@@ -13471,25 +13561,25 @@
       "expo_map": 1
     },
     {
-      "pk": 259,
+      "pk": 260,
       "title": "Restoration Games",
       "stand": "1209",
-      "website": "https://resurrection.games",
-      "description": "",
-      "url": "",
-      "expo_map": 1
-    },
-    {
-      "pk": 260,
-      "title": "Resurrection Games",
-      "stand": "2105",
-      "website": "",
+      "website": "https://restorationgames.com/",
       "description": "",
       "url": "",
       "expo_map": 1
     },
     {
       "pk": 261,
+      "title": "Resurrection Games",
+      "stand": "2105",
+      "website": "https://resurrection.games",
+      "description": "",
+      "url": "",
+      "expo_map": 1
+    },
+    {
+      "pk": 262,
       "title": "Retro Plus Games",
       "stand": "1312",
       "website": "",
@@ -13498,7 +13588,7 @@
       "expo_map": 1
     },
     {
-      "pk": 262,
+      "pk": 263,
       "title": "Rising Empire Studios",
       "stand": "1810",
       "website": "",
@@ -13507,7 +13597,7 @@
       "expo_map": 1
     },
     {
-      "pk": 263,
+      "pk": 264,
       "title": "Robin's Nerd Supplies",
       "stand": "1601",
       "website": "https://robinsnerdsupplies.com",
@@ -13516,7 +13606,7 @@
       "expo_map": 1
     },
     {
-      "pk": 264,
+      "pk": 265,
       "title": "Rock Manor Games",
       "stand": "1202",
       "website": "https://rockmanorgames.com",
@@ -13525,7 +13615,7 @@
       "expo_map": 1
     },
     {
-      "pk": 265,
+      "pk": 266,
       "title": "Rockport Games",
       "stand": "1403",
       "website": "https://rockportgames.com",
@@ -13534,7 +13624,7 @@
       "expo_map": 1
     },
     {
-      "pk": 266,
+      "pk": 267,
       "title": "Role 4 Initiative",
       "stand": "1802",
       "website": "",
@@ -13543,7 +13633,7 @@
       "expo_map": 1
     },
     {
-      "pk": 267,
+      "pk": 268,
       "title": "Roll With Adventure",
       "stand": "2016",
       "website": "",
@@ -13552,7 +13642,7 @@
       "expo_map": 1
     },
     {
-      "pk": 268,
+      "pk": 269,
       "title": "Rose Micro Solutions",
       "stand": "1004",
       "website": "",
@@ -13561,7 +13651,7 @@
       "expo_map": 1
     },
     {
-      "pk": 269,
+      "pk": 270,
       "title": "Rose Micro Solutions",
       "stand": "2013",
       "website": "",
@@ -13570,7 +13660,7 @@
       "expo_map": 1
     },
     {
-      "pk": 270,
+      "pk": 271,
       "title": "Sage Stones",
       "stand": "2704",
       "website": "https://sagestonesgame.com",
@@ -13579,7 +13669,7 @@
       "expo_map": 1
     },
     {
-      "pk": 271,
+      "pk": 272,
       "title": "Saving Throw Pillows",
       "stand": "2023",
       "website": "https://savingthrowpillows.com",
@@ -13588,7 +13678,7 @@
       "expo_map": 1
     },
     {
-      "pk": 272,
+      "pk": 273,
       "title": "Sea Cow Games",
       "stand": "13030",
       "website": "https://seacowboardgames.com",
@@ -13597,7 +13687,7 @@
       "expo_map": 1
     },
     {
-      "pk": 273,
+      "pk": 274,
       "title": "Sea Dog Games Studios",
       "stand": "1017",
       "website": "",
@@ -13606,7 +13696,7 @@
       "expo_map": 1
     },
     {
-      "pk": 274,
+      "pk": 275,
       "title": "SFR Inc",
       "stand": "1405",
       "website": "https://dragondice.com",
@@ -13615,7 +13705,7 @@
       "expo_map": 1
     },
     {
-      "pk": 275,
+      "pk": 276,
       "title": "Shard Bugs",
       "stand": "2503",
       "website": "https://shardbugstcg.com",
@@ -13624,7 +13714,7 @@
       "expo_map": 1
     },
     {
-      "pk": 276,
+      "pk": 277,
       "title": "Silverwood Wood Designs",
       "stand": "1809",
       "website": "",
@@ -13633,7 +13723,7 @@
       "expo_map": 1
     },
     {
-      "pk": 277,
+      "pk": 278,
       "title": "Simeous Business",
       "stand": "1506",
       "website": "https://simeousbusiness.com",
@@ -13642,7 +13732,7 @@
       "expo_map": 1
     },
     {
-      "pk": 278,
+      "pk": 279,
       "title": "Sky Kingdom Games",
       "stand": "1501",
       "website": "https://skykingdomgames.com",
@@ -13651,7 +13741,7 @@
       "expo_map": 1
     },
     {
-      "pk": 279,
+      "pk": 280,
       "title": "Sleeping Giant Gaming",
       "stand": "1006",
       "website": "https://sleepinggiantgaming.com",
@@ -13660,7 +13750,7 @@
       "expo_map": 1
     },
     {
-      "pk": 280,
+      "pk": 281,
       "title": "SMASHCRAFT",
       "stand": "1217",
       "website": "",
@@ -13669,7 +13759,7 @@
       "expo_map": 1
     },
     {
-      "pk": 281,
+      "pk": 282,
       "title": "Smirk & Dagger Games",
       "stand": "2308",
       "website": "https://smirkanddagger.com",
@@ -13678,7 +13768,7 @@
       "expo_map": 1
     },
     {
-      "pk": 282,
+      "pk": 283,
       "title": "Snowbright Studio",
       "stand": "2211",
       "website": "",
@@ -13687,7 +13777,7 @@
       "expo_map": 1
     },
     {
-      "pk": 283,
+      "pk": 284,
       "title": "Sophisticated Cerberus Games",
       "stand": "1308",
       "website": "https://sophisticatedcerberus.com",
@@ -13696,7 +13786,7 @@
       "expo_map": 1
     },
     {
-      "pk": 284,
+      "pk": 285,
       "title": "Soul Masters TCG",
       "stand": "2318",
       "website": "",
@@ -13705,7 +13795,7 @@
       "expo_map": 1
     },
     {
-      "pk": 285,
+      "pk": 286,
       "title": "Speedrobo Games/TCG Co",
       "stand": "1200",
       "website": "https://speedrobogames.com",
@@ -13714,7 +13804,7 @@
       "expo_map": 1
     },
     {
-      "pk": 286,
+      "pk": 287,
       "title": "SRG Universe",
       "stand": "1214",
       "website": "",
@@ -13723,7 +13813,7 @@
       "expo_map": 1
     },
     {
-      "pk": 287,
+      "pk": 288,
       "title": "STACCS",
       "stand": "2306",
       "website": "https://sticcy.cc",
@@ -13732,7 +13822,7 @@
       "expo_map": 1
     },
     {
-      "pk": 288,
+      "pk": 289,
       "title": "Steampunk Garage - Chainmaille",
       "stand": "2027",
       "website": "https://steampunkgarage.com",
@@ -13741,7 +13831,7 @@
       "expo_map": 1
     },
     {
-      "pk": 289,
+      "pk": 290,
       "title": "Stitchology Crafts",
       "stand": "2608",
       "website": "https://stitchologycrafts.com",
@@ -13750,7 +13840,7 @@
       "expo_map": 1
     },
     {
-      "pk": 290,
+      "pk": 291,
       "title": "Stone Age Entertainment",
       "stand": "1814",
       "website": "https://stoneageentertainment.com",
@@ -13759,7 +13849,7 @@
       "expo_map": 1
     },
     {
-      "pk": 291,
+      "pk": 292,
       "title": "Story Garden Publishing",
       "stand": "1818",
       "website": "https://jordanrileyswan@gmail.com",
@@ -13768,7 +13858,7 @@
       "expo_map": 1
     },
     {
-      "pk": 292,
+      "pk": 293,
       "title": "Strange Machine Games",
       "stand": "1422",
       "website": "",
@@ -13777,7 +13867,7 @@
       "expo_map": 1
     },
     {
-      "pk": 293,
+      "pk": 294,
       "title": "Studio 2 Publishing",
       "stand": "1307",
       "website": "https://studio2publishing.com",
@@ -13786,7 +13876,7 @@
       "expo_map": 1
     },
     {
-      "pk": 294,
+      "pk": 295,
       "title": "Studio de Sade: Fine Art of Nigel Sade",
       "stand": "1526",
       "website": "",
@@ -13795,7 +13885,7 @@
       "expo_map": 1
     },
     {
-      "pk": 295,
+      "pk": 296,
       "title": "Studio Pen Pen",
       "stand": "1522",
       "website": "",
@@ -13804,7 +13894,7 @@
       "expo_map": 1
     },
     {
-      "pk": 296,
+      "pk": 297,
       "title": "Studio Smithy Art",
       "stand": "1817",
       "website": "",
@@ -13813,7 +13903,7 @@
       "expo_map": 1
     },
     {
-      "pk": 297,
+      "pk": 298,
       "title": "Studio Woe",
       "stand": "1012",
       "website": "",
@@ -13822,18 +13912,9 @@
       "expo_map": 1
     },
     {
-      "pk": 298,
+      "pk": 299,
       "title": "Sugarbplays DIY CrossStitch",
       "stand": "1913",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 1
-    },
-    {
-      "pk": 299,
-      "title": "Surfin' Meeple",
-      "stand": "2219",
       "website": "",
       "description": "",
       "url": "",
@@ -14273,7 +14354,7 @@
     },
     {
       "pk": 348,
-      "title": "Welcome Home CreationsTn",
+      "title": "Welcome Home Creations TN",
       "stand": "2606",
       "website": "https://welcomehomecreationstn.com",
       "description": "",
@@ -14327,15 +14408,6 @@
     },
     {
       "pk": 354,
-      "title": "Witches' Quarrel",
-      "stand": "2504",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 1
-    },
-    {
-      "pk": 355,
       "title": "WizKids",
       "stand": "2802",
       "website": "",
@@ -14344,7 +14416,7 @@
       "expo_map": 1
     },
     {
-      "pk": 356,
+      "pk": 355,
       "title": "Wyvern Warfare",
       "stand": "1910",
       "website": "",
@@ -14353,9 +14425,18 @@
       "expo_map": 1
     },
     {
-      "pk": 357,
+      "pk": 356,
       "title": "XP Network",
       "stand": "1904",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 1
+    },
+    {
+      "pk": 357,
+      "title": "XP Network Dungeon Crawl",
+      "stand": "1330",
       "website": "",
       "description": "",
       "url": "",
@@ -14462,7 +14543,7 @@
     },
     {
       "pk": 9,
-      "title": "BrownCastle Games",
+      "title": "Brown Castle Games",
       "stand": "2212",
       "website": "https://browncastlegames.com",
       "description": "",
@@ -14516,7 +14597,7 @@
     },
     {
       "pk": 15,
-      "title": "EpicStrategicSimulations / VR-Soft",
+      "title": "Epic Strategic Simulations",
       "stand": "2118",
       "website": "https://vr-soft.com",
       "description": "",
@@ -14534,7 +14615,7 @@
     },
     {
       "pk": 17,
-      "title": "GameBase 7",
+      "title": "Game Base 7",
       "stand": "2422",
       "website": "https://gamebase7.org",
       "description": "",
@@ -14597,6 +14678,15 @@
     },
     {
       "pk": 24,
+      "title": "Night Crew Games",
+      "stand": "2200",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 25,
       "title": "Ohio War Kings",
       "stand": "2120",
       "website": "",
@@ -14605,61 +14695,7 @@
       "expo_map": 2
     },
     {
-      "pk": 25,
-      "title": "Open Gaming",
-      "stand": "2330",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
       "pk": 26,
-      "title": "Open Gaming",
-      "stand": "2430",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 27,
-      "title": "Open Gaming",
-      "stand": "2530",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 28,
-      "title": "Open Gaming",
-      "stand": "2334",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 29,
-      "title": "Open Gaming",
-      "stand": "2434",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 30,
-      "title": "Open Gaming",
-      "stand": "2534",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 31,
       "title": "Open Gaming",
       "stand": "2238",
       "website": "",
@@ -14668,43 +14704,7 @@
       "expo_map": 2
     },
     {
-      "pk": 32,
-      "title": "Open Gaming",
-      "stand": "2328",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 33,
-      "title": "Open Gaming",
-      "stand": "2438",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 34,
-      "title": "Open Gaming",
-      "stand": "2538",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 35,
-      "title": "Open Gaming",
-      "stand": "2342",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 36,
+      "pk": 27,
       "title": "Open Gaming",
       "stand": "2242",
       "website": "",
@@ -14713,25 +14713,7 @@
       "expo_map": 2
     },
     {
-      "pk": 37,
-      "title": "Open Gaming",
-      "stand": "2442",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 38,
-      "title": "Open Gaming",
-      "stand": "2542",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 39,
+      "pk": 28,
       "title": "Open Gaming",
       "stand": "2246",
       "website": "",
@@ -14740,34 +14722,7 @@
       "expo_map": 2
     },
     {
-      "pk": 40,
-      "title": "Open Gaming",
-      "stand": "2346",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 41,
-      "title": "Open Gaming",
-      "stand": "2446",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 42,
-      "title": "Open Gaming",
-      "stand": "2546",
-      "website": "",
-      "description": "",
-      "url": "",
-      "expo_map": 2
-    },
-    {
-      "pk": 43,
+      "pk": 29,
       "title": "Open Gaming",
       "stand": "2250",
       "website": "",
@@ -14776,7 +14731,43 @@
       "expo_map": 2
     },
     {
-      "pk": 44,
+      "pk": 30,
+      "title": "Open Gaming",
+      "stand": "2328",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 31,
+      "title": "Open Gaming",
+      "stand": "2342",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 32,
+      "title": "Open Gaming",
+      "stand": "2342",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 33,
+      "title": "Open Gaming",
+      "stand": "2346",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 34,
       "title": "Open Gaming",
       "stand": "2350",
       "website": "",
@@ -14785,7 +14776,34 @@
       "expo_map": 2
     },
     {
-      "pk": 45,
+      "pk": 35,
+      "title": "Open Gaming",
+      "stand": "2438",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 36,
+      "title": "Open Gaming",
+      "stand": "2442",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 37,
+      "title": "Open Gaming",
+      "stand": "2446",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 38,
       "title": "Open Gaming",
       "stand": "2450",
       "website": "",
@@ -14794,7 +14812,34 @@
       "expo_map": 2
     },
     {
-      "pk": 46,
+      "pk": 39,
+      "title": "Open Gaming",
+      "stand": "2538",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 40,
+      "title": "Open Gaming",
+      "stand": "2542",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 41,
+      "title": "Open Gaming",
+      "stand": "2546",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 42,
       "title": "Open Gaming",
       "stand": "2550",
       "website": "",
@@ -14803,8 +14848,8 @@
       "expo_map": 2
     },
     {
-      "pk": 47,
-      "title": "Ottowa RedShirts",
+      "pk": 43,
+      "title": "Ottowa Red Shirts",
       "stand": "2420",
       "website": "",
       "description": "",
@@ -14812,7 +14857,7 @@
       "expo_map": 2
     },
     {
-      "pk": 48,
+      "pk": 44,
       "title": "Pro Play Games",
       "stand": "2500",
       "website": "",
@@ -14821,7 +14866,7 @@
       "expo_map": 2
     },
     {
-      "pk": 49,
+      "pk": 45,
       "title": "ProtoCLE",
       "stand": "2518",
       "website": "",
@@ -14830,7 +14875,7 @@
       "expo_map": 2
     },
     {
-      "pk": 50,
+      "pk": 46,
       "title": "Rising Phoenix Gaming Club",
       "stand": "2322",
       "website": "",
@@ -14839,7 +14884,7 @@
       "expo_map": 2
     },
     {
-      "pk": 51,
+      "pk": 47,
       "title": "Sanctuary at Homestead",
       "stand": "2226",
       "website": "",
@@ -14848,7 +14893,79 @@
       "expo_map": 2
     },
     {
+      "pk": 48,
+      "title": "Shared Scheduled Gaming Event Space",
+      "stand": "2534",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 49,
+      "title": "Shared Scheduled Gaming Event Space",
+      "stand": "2434",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 50,
+      "title": "Shared Scheduled Gaming Event Space",
+      "stand": "2334",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 51,
+      "title": "Shared Scheduled Gaming Event Space",
+      "stand": "2530",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
       "pk": 52,
+      "title": "Shared Scheduled Gaming Event Space",
+      "stand": "2430",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 53,
+      "title": "Shared Scheduled Gaming Event Space",
+      "stand": "2330",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 54,
+      "title": "Shared Scheduled Gaming Event Space",
+      "stand": "2526",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 55,
+      "title": "Shared Scheduled Gaming Event Space",
+      "stand": "2426",
+      "website": "",
+      "description": "",
+      "url": "",
+      "expo_map": 2
+    },
+    {
+      "pk": 56,
       "title": "SRG Universe",
       "stand": "2326",
       "website": "",
@@ -14857,7 +14974,7 @@
       "expo_map": 2
     },
     {
-      "pk": 53,
+      "pk": 57,
       "title": "Strategic Gaming Group (SGG)",
       "stand": "2412",
       "website": "",
@@ -14866,7 +14983,7 @@
       "expo_map": 2
     },
     {
-      "pk": 54,
+      "pk": 58,
       "title": "TGA",
       "stand": "2222",
       "website": "",
@@ -14875,7 +14992,7 @@
       "expo_map": 2
     },
     {
-      "pk": 55,
+      "pk": 59,
       "title": "Unpub",
       "stand": "2132",
       "website": "",
@@ -14884,7 +15001,7 @@
       "expo_map": 2
     },
     {
-      "pk": 56,
+      "pk": 60,
       "title": "Warlord Games",
       "stand": "2108",
       "website": "",
@@ -14893,7 +15010,7 @@
       "expo_map": 2
     },
     {
-      "pk": 57,
+      "pk": 61,
       "title": "Warlord Games",
       "stand": "2208",
       "website": "",
@@ -14902,8 +15019,8 @@
       "expo_map": 2
     },
     {
-      "pk": 58,
-      "title": "Wild Bill'sSoda",
+      "pk": 62,
+      "title": "Wild Bill's Soda",
       "stand": "2202",
       "website": "",
       "description": "",
@@ -14911,7 +15028,7 @@
       "expo_map": 2
     },
     {
-      "pk": 59,
+      "pk": 63,
       "title": "WizKids",
       "stand": "2400",
       "website": "",
